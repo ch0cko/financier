@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f8f2;
+}
+
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #b39a6a;
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.google-btn {
+    width: 100%;
+}
+
+.btn-custom {
+    background-color: #e0d09b;
+    color: #5b4d40;
+}
+
+.form-txt {
+    margin-top: 10px;
+    font-size: small;
+}
+
+.main-txt {
+    color: #5C4A39;
+}
+
+.sub-txt {
+    color: #736460;
+}
