@@ -61,4 +61,4 @@ function toggleCards() {
 
         signupCard.classList.toggle('active');
         loginCard.classList.toggle('active');
-    };
+};

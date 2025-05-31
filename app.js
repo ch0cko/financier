@@ -14,13 +14,6 @@ mongoose.connect(uri)
 const app = express();
 const port = 3000;
 
-// Add body-parser middleware to parse JSON and urlencoded bodies
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(
     session({
         secret: "financier1024",
@@ -29,6 +22,13 @@ app.use(
         cookie: { secure: false },
     })
 );
+
+// Add body-parser middleware to parse JSON and urlencoded bodies
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
     res.redirect("/index.html");
